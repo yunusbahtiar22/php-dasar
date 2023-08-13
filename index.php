@@ -16,12 +16,12 @@ function luas_persegi($panjang, $lebar) {
 
 for ($i = 1; $i < 1001; $i++) {
   if ($i % 3 == 0) {
-    echo luas_linkaran($i) . "<br />";
+    echo sprintf("%.2f", luas_linkaran($i)) . "<br />";
   } else if ($i % 5 == 0) {
-    echo keliling_lingkaran($i) . "<br />";
+    echo sprintf("%.2f", keliling_lingkaran($i)) . "<br />";
   } else if ($i % 3 == 0 && $i % 5 == 0) {
-    echo luas_persegi($i, $i) . "<br />";
+    echo sprintf("%.2f", luas_persegi($i, $i)) . "<br />";
   } else {
-    echo $i . "<br />";
+    echo sprintf("%.2f", $i) . "<br />";
   }
 }
